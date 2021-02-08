@@ -1,3 +1,5 @@
+// const _ = require('underscore');
+
 function sumFor(numbers) {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -24,8 +26,7 @@ function sumRecursion(numbers) {
 }
 
 function sumTheSimpleWay(numbers) {
-  const sum = _.reduce(numbers, function (memo, num) { return memo + num; }, 0);
-  return sum;
+  return _.reduce(numbers, function (memo, num) { return memo + num; }, 0);
 }
 
 console.log(sumFor([1, 2, 3, 4, 5, 6, 7, 8]));
